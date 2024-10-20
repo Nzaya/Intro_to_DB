@@ -1,10 +1,10 @@
 SELECT 
     COLUMN_NAME, 
-    DATA_TYPE, 
-    CHARACTER_MAXIMUM_LENGTH, 
+    COLUMN_TYPE, 
     IS_NULLABLE 
 FROM 
-    information_schema.COLUMNS 
+    INFORMATION_SCHEMA.COLUMNS 
 WHERE 
     TABLE_NAME = 'Books' 
     AND TABLE_SCHEMA = 'alx_book_store';
+
