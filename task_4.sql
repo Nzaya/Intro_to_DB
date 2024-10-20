@@ -1,11 +1,10 @@
 SELECT 
     COLUMN_NAME, 
-    COLUMN_TYPE, 
-    IS_NULLABLE, 
-    COLUMN_DEFAULT, 
-    EXTRA 
+    DATA_TYPE, 
+    CHARACTER_MAXIMUM_LENGTH, 
+    IS_NULLABLE 
 FROM 
-    INFORMATION_SCHEMA.COLUMNS 
+    information_schema.COLUMNS 
 WHERE 
-    TABLE_SCHEMA = 'alx_book_store' 
-    AND TABLE_NAME = 'books';
+    TABLE_NAME = 'Books' 
+    AND TABLE_SCHEMA = 'alx_book_store';
